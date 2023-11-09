@@ -1,0 +1,207 @@
+@import url(normalize.css);
+@import url(modern-reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* a{
+    text-decoration: none;
+}
+/* #region header */
+.header{
+    position: relative;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header nav{
+    padding: 0px 0 0 47px;
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.header nav div a:not(:first-child){
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+
+    margin: 0 76px 8px 0;
+}
+.header nav div a:first-child{
+    margin: 0 49px 0 0;
+    flex-shrink: 0;
+}
+.header nav div{
+    display: flex;
+    align-items: flex-end;
+}
+.cake{
+    max-width: 164px;
+    max-height: 103px;
+    margin-left: auto;
+}
+.line_header{
+    position: absolute;
+}
+.long_line{
+    transform: translate(24%, 0%);
+}
+.short_line{
+    transform: translate(-34%, 0px);
+}
+
+/*                   background lines                             */
+.bg_lines{
+    display: flex;
+    position: absolute;
+}
+
+.bg_lines .horizontal_line_short{
+    margin: 0px 0 0 0 ;
+    position: absolute;
+    width: 135px;
+    height: 1px;
+    border: none;
+    background: #D0D0D0;
+    left: 0px;
+    top: 103px;
+}
+.bg_lines .horizontal_line_long{
+    margin: 0;
+    position: absolute;
+    width: 990px;
+    height: 1px;
+    background: #D0D0D0;
+    border: none;
+    left: 284px;
+    top: 103px;
+}
+
+.bg_lines .vertical_line{
+    width: 1px;
+    height: 1550px;
+    background: #D0D0D0;
+    border: none;
+    margin-top: 0px;
+}
+.bg_lines :first-child{
+    margin: 126px 211.5px 0 211.5px;
+}
+.bg_lines :not(:first-child, :nth-child(4), :nth-child(5), :nth-child(6), :nth-child(7)){
+    margin-right: 211.5px;
+}
+.bg_lines :last-child{
+    margin-right: 164px;
+}
+.squares{
+    position: absolute;
+    top: 103px;
+    width: 100%;
+
+}
+.littelsquare{
+    position: absolute;
+    margin: 1px 0 0 0;
+    top: 0;
+    right: 164px;
+}
+
+/*                  #region images                             */
+.header_images > :nth-child(1){
+    position: absolute;
+    width: 89px;
+    height: 132px;
+    top: 170px;
+    left: 93px;
+}
+.header_images > :nth-child(2){
+    position: absolute;
+    width: 425px;
+    height: 410px;
+    top: 180px;
+    left: 212px;
+    flex-shrink: 0;
+}
+.header_images > :nth-child(3){
+    position: absolute;
+    width: 212px;
+    height: 206px;
+    top: 384px;
+    left: 1062px;
+}
+.header_images > :nth-child(4){
+    position: absolute;
+    width: 373px;
+    height: 469px;
+    flex-shrink: 0;
+    top: 712px;
+    left: 477px;
+}
+.header_images > :nth-child(5){
+    position: absolute;
+    width: 154px;
+    height: 140px;
+    flex-shrink: 0;
+    top: 973px;
+    left: 233px;
+}
+.header_images div{
+    position: absolute;
+    display: flex;
+    gap: 24px;
+    top: 1082px;
+    left: 1130px;
+}
+.header_body .header_images div img{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.header_slogan > :nth-child(1){
+    position: absolute;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 124px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 24.194% */
+    top: 187px;
+    left: 668px;
+}
+.header_slogan > :nth-child(2){
+    position: absolute;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 107px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 28.037% */
+    top: 635px;
+    left: 632px;
+}
+.header_slogan > :nth-child(3){
+    position: absolute;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 107px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 28.037% */
+    top: 822px;
+    left: 70px;
+
+}
+
+/*                   #endregion              */
+/* #endregion   */
