@@ -14,6 +14,8 @@ body{
 /* #region header */
 .header{
     position: relative;
+    top: 0;
+    left: 0;
 }
 .container{
     max-width: 1440px;
@@ -202,6 +204,40 @@ body{
     left: 70px;
 
 }
-
 /*                   #endregion              */
 /* #endregion   */
+
+/* #region main */
+.slider{
+    position: relative;
+    width: 1440px;
+    flex-shrink: 0;
+    padding-top: 1287px;
+    z-index: 2;
+}
+.slider > img{
+    max-width: 100%;
+}
+.button{
+    cursor: pointer;
+    width: 53px;
+    height: 45px;
+    background: none;
+    background-image: url(images/small/arrow_left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+}
+.button:active{
+    transform: scale(0.9);
+    background-image: url(images/small/arrow_left_down.svg);
+}
+.slider_button{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 1709px;
+    left: 38px;
+}
+
