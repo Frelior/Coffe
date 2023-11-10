@@ -55,21 +55,28 @@
         </div>
     </header>
 
-    <main>
-        <section class="slider container">
-            <img class="sliderimage1" src="images/bg/slider1.png" alt="">
-            <input type="button" value="" class="button slider_button">
+    <main class="container">
+
+        <section class="slider">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+
+                <div class="slide s1"><img src="images/bg/slider1.png"></div>
+                <div class="slide"><img src="images/bg/slider2.png"></div>
+                <div class="slide"><img src="images/bg/slider3.png"></div>
+            </div>
+
+            <div class="slider_nav">
+                <label class="bar" for="r1"></label>
+                <label class="bar" for="r2"></label>
+                <label class="bar" for="r3"></label>
+            </div>
 
         </section>
+
     </main>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
